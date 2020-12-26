@@ -88,84 +88,115 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
     height: auto;
 }
 
-/*PROJECTS*/
 
-.projects {
-    margin-top:60px;
-    color: white;
-    list-style-type: none;
-    padding: 0px 50px;
-    display:inline-block;
+/*****************************PROJECTS***************************************/
+
+.projects2{
+    width: 100%;
+
+    text-align: left;
+    vertical-align: middle;
+    padding:40px 50px;
 }
 
-.projects li {
-    border-bottom: 1px solid white;
+.projects2 h2 {
+    display:inline-block;
+    font-size:30px;
+    padding-left:50px;
+    line-height: 10px;
+    color: #38FFc5;
+}
+
+.projects2 h3 {
+    text-align: justify;
+    padding-left:100px;
+    font-size:20px;
+    color:black;
+
+}
+
+.projects2 h3#withImage{
+    max-width: 87%;
+}
+
+.projects2 a {
+    color:black;
+    text-decoration: underline;
+}
+
+.projects2 tr {
     text-align:left;
     display:inline-block;
 }
 
-.projects li h2 {
-    display:inline-block;
-    padding-left:50px;
+.projects2 tr#addLine{
+    border-bottom: 1px solid #38FFc5;
 }
 
-.projects li p {
-    text-align: justify;
-    padding-left:70px;
+.projects2 td {
+    max-width:75%;
 }
 
-.projectItem {
+.projects2 img {
+    padding-right:30px;
+}
 
-    padding-right:50px;
+.theTurningImage2{
+    max-width: 400px;
+
+}
+
+.innerAllyImage2{
+    max-width: 200px;
+}
+
+.jump4justiceImage2 {
+    max-width: 400px;
+}
+
+.aiwolfimage2{
+    max-width: 500px;
+}
+
+/********************************************************************/
+
+
+/*******************************ABOUT********************************/
+
+.about h2#hello {
+    padding-left:10%;
+    font-size:300px;
+    line-height: 0px;
+    height: 0px;
+}
+
+.about h2#name {
+    padding-left:10%;
+    font-size:100px;
+    line-height: 0px;
+    height: 0px;
+}
+
+.about h2#intro {
+    text-align: center;
+    padding-top: 100px;
+    max-width:75%;
+    color:#38FFc5;
+    font-size:85px;
+}
+
+.about table, th, td {
+    width: 100%;
+    height:25%;
+    table-layout: fixed;
+    text-align: left;
+    vertical-align: middle;
+    padding-top:10px;
 }
 
 
-.projects img {
-    height:auto;
-    float:right;
-    padding-right:50px;
-    padding-left: 20px;
-    vertical-align: auto;
-    /*display:inline-block;*/
-}
+/********************************************************************/
 
-.innerAllyImage {
-    width:10%;
-}
-
-.jump4justiceImage {
-    width:20%;
-    padding-top: 50px;
-}
-
-.theTurningImage {
-    width:20%;
-    padding-top: 50px;
-}
-
-.aiwolfimage {
-    width:30%;
-    padding-top:50px;
-}
-
-.projects li a {
-    color:white;
-    text-decoration: underline;   
-}
-
-.projectsTable{
-    width:100%;
-}
-
-
-/*
-ul#navBar .dropbtn {
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }*/
 
 /******Prevents Overscrolling******/
 html, body {
