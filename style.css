@@ -16,6 +16,14 @@ html * {
     /*font-family: "Century Gothic", sans-serif;*/
 }
 
+
+
+
+
+
+
+/*****************************NAVBAR***************************************/
+
 .topBar{
     background-color:rgba(20, 20, 20, 255);
     position:fixed;
@@ -88,6 +96,13 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
     height: auto;
 }
 
+/****************************************************************************/
+
+
+
+
+
+
 
 /*****************************PROJECTS***************************************/
 
@@ -159,6 +174,11 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
 }
 
 /********************************************************************/
+
+
+
+
+
 
 
 /*******************************ABOUT********************************/
