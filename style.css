@@ -184,6 +184,7 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
 /*******************************ABOUT********************************/
 
 .about h2#hello {
+    padding-top:5%;
     padding-left:10%;
     font-size:300px;
     line-height: 0px;
@@ -199,10 +200,10 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
 
 .about h2#intro {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 0px;
     max-width:75%;
     color:#38FFc5;
-    font-size:85px;
+    font-size:25px;
 }
 
 .about table, th, td {
@@ -211,7 +212,7 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
     table-layout: fixed;
     text-align: left;
     vertical-align: middle;
-    padding-top:10px;
+    padding-top:20px;
 }
 
 
