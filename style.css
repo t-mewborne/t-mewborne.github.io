@@ -7,8 +7,9 @@ html * {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
-    /*background-color: rgb(41, 41, 41);*/
-    background-color: rgba(100,100,100,255);
+    background-color: rgb(200, 200, 200);
+    /*background-color: rgba(100,100,100,255);*/
+
     background-attachment: fixed; /*Fixes the picture in place*/
     width: 100%;
     height: 100%;
@@ -108,7 +109,7 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
 
 .projects2{
     width: 100%;
-
+    color:black;
     text-align: left;
     vertical-align: middle;
     padding:40px 50px;
@@ -119,7 +120,8 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
     font-size:30px;
     padding-left:50px;
     line-height: 10px;
-    color: #38FFc5;
+    /*color: #38FFc5;*/
+    color: #b21500;
 }
 
 .projects2 h3 {
@@ -145,7 +147,8 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
 }
 
 .projects2 tr#addLine{
-    border-bottom: 1px solid #38FFc5;
+    /*border-bottom: 1px solid #38FFc5;*/
+    border-bottom: 1px solid #b21500;
 }
 
 .projects2 td {
@@ -183,12 +186,17 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
 
 /*******************************ABOUT********************************/
 
+.about {
+    color:black;
+}
+
 .about h2#hello {
     padding-top:5%;
     padding-left:10%;
     font-size:300px;
     line-height: 0px;
     height: 0px;
+    /*color:#b21500;*/
 }
 
 .about h2#name {
@@ -196,13 +204,15 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
     font-size:100px;
     line-height: 0px;
     height: 0px;
+    
 }
 
 .about h2#intro {
     text-align: center;
     padding-top: 0px;
     max-width:75%;
-    color:#38FFc5;
+    /*color:#38FFc5;*/
+    color:#b21500;
     font-size:25px;
 }
 
