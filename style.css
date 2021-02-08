@@ -201,18 +201,24 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
 
 .about h2#name {
     padding-left:10%;
-    font-size:100px;
+    font-size:130px;
     line-height: 0px;
     height: 0px;
     
 }
 
+.about h2#school {
+    padding-left:10%;
+    font-size:25px;
+}
+
 .about h2#intro {
-    text-align: center;
+    text-align: justify;
+    vertical-align: middle;
     padding-top: 0px;
     max-width:75%;
     /*color:#38FFc5;*/
-    color:#b21500;
+    /*color:#b21500;*/
     font-size:25px;
 }
 
@@ -223,6 +229,14 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
     text-align: left;
     vertical-align: middle;
     padding-top:20px;
+}
+
+.about table img {
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    border-radius: 5px;
 }
 
 
