@@ -155,24 +155,15 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
     max-width:75%;
 }
 
-.projects2 img {
-    padding-right:30px;
+.generalImage{
+    max-width: 90%;
 }
 
-.theTurningImage2{
-    max-width: 400px;
-
-}
-
-.innerAllyImage2{
+.innerAllyImage{
     max-width: 200px;
 }
 
-.jump4justiceImage2 {
-    max-width: 400px;
-}
-
-.aiwolfimage2{
+.aiwolfimage{
     max-width: 500px;
 }
 
