@@ -7,7 +7,7 @@ html * {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(220, 220, 220);
     /*background-color: rgba(100,100,100,255);*/
 
     background-attachment: fixed; /*Fixes the picture in place*/
@@ -121,7 +121,8 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
     padding-left:50px;
     line-height: 10px;
     /*color: #38FFc5;*/
-    color: #b21500;
+    /*color: #b21500;*/
+    color:royalblue;
 }
 
 .projects2 h3 {
@@ -148,7 +149,8 @@ ul#navBar li a:hover, ul#navBar .dropbtn:hover, ul#navBar li a.thisPage{
 
 .projects2 tr#addLine{
     /*border-bottom: 1px solid #38FFc5;*/
-    border-bottom: 1px solid #b21500;
+    /*border-bottom: 1px solid #b21500;*/
+    border-bottom: 1px solid black;
 }
 
 .projects2 td {
