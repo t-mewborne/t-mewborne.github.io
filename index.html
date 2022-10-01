@@ -1,53 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Travis Mewborne | About</title>
+        <title>Travis Mewborne</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" href="favicon.png">
+        <script type="text/javascript" src="script.js" defer></script>
     </head>
+
     <body>
-        <div class = "background">
-            <div class = "topBar">
+        <div class = "content">
+            <div class="name">
                 <h1>Travis Mewborne</h1>
-                <ul id = "navBar">
-                    <li><a class="thisPage" href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li>
-                        <div class="externalLinkDropdown">
-                            <button class="dropbtn">Around the Web</button>
-                            <div class="dropdown-content">
-                              <a href="https://www.linkedin.com/in/t-mewborne" target="_blank">
-                                <img class = "linkedinlogo" src="images/LI-Logo.png"></a>
-                              <a href="https://github.com/t-mewborne" target="_blank">
-                                <img class = "githublogo" src="images/GitHub-Mark-Light-64px.png">&nbsp;GitHub</a>
-                              <a href="https://www.hackerrank.com/tmewborne" target="_blank">
-                            <img src="images/hackerranklogo.svg"></a>
-                            </div>
+                <div class="descriptions">
+                    
+                    <div class = "skills">
+                        <h2 id = "me">Me</h2>
+                        <h2 id = "software">Software</h2>
+                        <h2 id = "security">Security</h2>
+                        <h2 id = "network">Network</h2>
+                        <h2 id = "design">Design</h2>
+                    </div>
+                    <div class = "bits">
+                        <div id = "bitme">
+                            <img src="images/me.png" alt="A photo of Travis">
+                            <p>Hi! My name is Travis. I am a Master's of Cybersecurity student at Northeastern University. I earned my Bachelor's degree in Computer Science
+                                at Trinity University in San Antonio, TX. I am actively searching for oppurtunities to apply my Cybersecurity skills in the Boston area for
+                                the duration of summer 2023.
+                            </p>
                         </div>
-                    </li>
-                </ul>
+                        <div id = "bitsoftware">
+                            <p>My time at Trinity prepared me for various software-related roles. I have the knowledge base to quickly learn new languages as needed. I currently
+                                feel most confident the following languages: Java, Scala, Python, C++, C#, Haskell, and Web Development languages. I have experience with Eclipse IDE,
+                                Visual Studio Code, Java Processing, the Microsoft Office Suite, and the Adobe Suite.
+                            </p>
+                        </div>
+                        <div id = "bitsecurity">
+                            <p>At Northeastern, I am learning the skills required to circumvent cybercrime. I have experience with the following: SSRF, XSS, anf Fingerprinting.
+                                Northeastern has taught me more about Virtual Machines and the ins and outs of Linux Shell. 
+                                <br><br>
+                                Relevant Coursework: Software Vulnerabilities
+                            </p>
+                        </div>
+                        <div id = "bitnetwork">
+                            <p>Aside from Security, Northeastern taught me relevant Computer Networking techniques that are essential to a Cybersecuriy role.</p>
+                        </div>
+                        <div id = "bitdesign">
+                            <p>In my spare time, I enjoy designing Websites such as this.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class = "about">
-                <table>
-                    <tr>
-                        <td>
-                            <h2 id = hello>Hi.</h2>
-                            <h2 id = name>I'm Travis.</h2>
-                            <h2 id = school>Trinity University 2022 | Computer Science | San Antonio, TX</h2>
-                        </td>
-                        <td>
-                            <h2 id = intro>
-                                <br>
-                                <img src = "images/mypicture.png">
-                                <br>
-                                I was drawn to computers and electronics before I could even talk. 
-                                My appreciation for the complexity of computers and the desire to help people has curated a passion for cybersecurity. 
-                                As such, I am actively forming a security-related thesis for my senior year. I am willing to relocate.
-                            </h2>
-                        </td>
-                    </tr>
-                </table>
+            <div class="navigation">
+                <ul>
+                    <li class = "currentPage"><a href="index.html">&#8226 About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="files/webResume.pdf" target="_blank">R&#233sum&#233</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul id = "social">
+                    <li><a href="https://github.com/t-mewborne" target="_blank"><img src="logos/github64.png" alt="GitHub Profile"></a></li>
+                    <li><a href="https://www.linkedin.com/in/t-mewborne/" target="_blank"><img src="logos/in.png" alt="LinkedIn Profile"></a></li>
+                </ul>
             </div>
         </div>
     </body>
