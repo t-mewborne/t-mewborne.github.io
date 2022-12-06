@@ -11,7 +11,8 @@ body {
 }
 
 a:link, a:visited {
-    color: #B38600;
+    /* color: #B38600; */
+    color:#A239CA;
   }
 
 
@@ -26,7 +27,8 @@ a:link, a:visited {
 }
 
 .name h1 {
-    font-size: 75px;
+    /* font-size: 75px; */
+    font-size:4vw;
     letter-spacing: 14px;
 }
 
@@ -41,6 +43,7 @@ a:link, a:visited {
     /* background-color: aquamarine; */
     padding: 100px 20px; /*(top.bottom) (right,left) */
     font-size:30px;
+    /* font-size:2vw; TODO -- breaks JS hit boxes*/
     display: inline-block;
     position:relative;
     border-right:2px solid;
@@ -99,9 +102,17 @@ a:link, a:visited {
 /*Portfolio*/
 
 .portfolioImage {
-    width:80%;
-    padding-left:20%;
+    width:90%;
+    /* padding-left:10%; */
+    padding:10%;
 }
+
+/* .whoamiImage{
+    width:40%;
+    /* padding-left:10%; 
+    padding:2%;
+    margin-right:0;
+} */
 
 .name {
     overflow: scroll;
@@ -110,12 +121,15 @@ a:link, a:visited {
 
 .name table {
     border-collapse: collapse;
-    
+    margin-bottom:5%;
 }
 
 .name td {
-    border-bottom: 1px solid blueviolet;
-    padding-left: 2%;
+    /* border-bottom: 1px solid blueviolet; */
+    border-bottom: 1px solid #A239CA;
+    border-top: 1px solid #A239CA;
+    background-color: rgba(10,10,10,0.5);
+    padding-left: 3%;
     padding-right: 2%;
     padding-bottom:1%;
 }
@@ -124,7 +138,7 @@ a:link, a:visited {
 
 /*Navigation Panel*/
 
-.navigation {
+.navigation, .navigation-placeholder {
     display: inline-block;
     height:100%;
     width: 14%;
@@ -138,7 +152,8 @@ a:link, a:visited {
 
 .navigation ul {
     list-style-type: none;
-    font-size:30px;
+    /* font-size:30px; */
+    font-size:2vw;
     padding-left:0px;
     padding-top:50%;
 }

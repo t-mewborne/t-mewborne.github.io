@@ -22,14 +22,17 @@ bitMe.style.display="inline-block";
 //meText.style.textDecoration="underline";
 associations.forEach(element => {
     console.log(element[1])
+    //Hide everything
     element[0].addEventListener("mouseover",evt=>{
-        bitMe.style.display="none";
+        associations.forEach(j=>{
+            j[1].style.display="none"
+        })
+        //bitMe.style.display="none";
         element[1].style.display = "inline-block";
     })
 
-    element[0].addEventListener("mouseout", evt => {
-        element[1].style.display = "none";
-        bitMe.style.display="inline-block";
-    })
+    //element[0].addEventListener("mouseout", evt => {
+    //    element[1].style.display = "none";
+    //    bitMe.style.display="inline-block";
+    //})
 })
-
