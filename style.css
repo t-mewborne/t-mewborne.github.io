@@ -103,16 +103,10 @@ a:link, a:visited {
 
 .portfolioImage {
     width:90%;
+    /* height:1%; */
     /* padding-left:10%; */
     padding:10%;
 }
-
-/* .whoamiImage{
-    width:40%;
-    /* padding-left:10%; 
-    padding:2%;
-    margin-right:0;
-} */
 
 .name {
     overflow: scroll;
