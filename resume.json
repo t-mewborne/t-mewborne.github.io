@@ -1,0 +1,110 @@
+{
+    "education":{
+        "Northeastern University":{
+            "graduation":"May 2024",
+            "degree":"Master of Science, Cybersecurity",
+            "coursework":[
+                "Cyberspace Tech & Applications",
+                "Software Vulnerabilities",
+                "Foundation of Information Assurance",
+                "Computer System Security",
+                "Information System Forensics",
+                "Decision Making in Critical Infrastructure",
+                "Capstone Project"],
+            "image":"images/northeastern.png"
+        },
+        "Trinity University":{
+            "graduation":"May 2022",
+            "degree":"Bachelor of Science, Computer Science",
+            "coursework":[
+                "Principles of Computer Science (I & II)",
+                "Principles of Data Abstraciton",
+                "Principles of Functional Languages",
+                "Special Topics in Applications: Game AI",
+                "Special Topics in Applications: Java Programming",
+                "Principles of Computer Design",
+                "Principles of Theoretical Comptuter Science",
+                "Principles of Algorithms",
+                "Bioinformatics",
+                "Intro to Game Development",
+                "Principles of Software Enginnering",
+                "Advanced Game Development",
+                "Graphics",
+                "Computer Network and Security",
+                "Artificial Intelligence",
+                "Effective Progreamming Techniques",
+                "Thesis (I & II)"
+            ],
+            "image":"images/trinity.png"
+        }
+    },
+    "experience":{
+        "Cybersecurity Co-Op - MORSECorp":{
+            "dates":"July 2023 - Present",
+            "description":"Managed and maintained industry standard vulnerability management, log aggregation, and mobile device management systems. Created automated scripts that integrate with relevant software APIs to ensure compliance and coverage. Assessed vulnerability posture and notified relevant personnel of necessary remediations. Created processes to streamline Linux Virtual Machine Deployment with a focus on security. Assisted with other IT projects including the maintenance of backup infrastructure.",
+            "image":"images/morse.svg"
+        },
+        "ITS Tech Support Assistant - Trinity University":{
+            "dates":"August 2021 - April 2022",
+            "description":"At Trinity University, I assisted students and professors with resolving an abundance of different computer issues. These issues included problems with Internet connectivity, malware removal, software installation, and projector malfunction. I also ensured university computers were up to date and have all necessary software installed, and image new computers for students, faculty, and classrooms upon arrival. I evaluated old computers and determined eligibility for reuse or recycle.<br><br>Photo by <a href=\"https://www.pexels.com/photo/photo-of-person-typing-on-computer-keyboard-735911/\" target=\"_blank\">Soumil Kumar</a>",
+            "image":"images/its.jpg"
+        },
+        "Humane Society Volunteer":{
+            "dates":"2013 - 2018",
+            "description":"For 5 years, I volunteerd at a local animal shelter (<a href=\"https://www.hsecarolina.org/\" target=\"_blank\">The Humane Society of Eastern Carolina</a>). My responsibilities included socializing, grooming, and feeding cats and dogs. I represented the organiztion off site at Petco and PetSmart, where I consulted families on potential adoption. The Humane Society helped me develop interpersonal relationships and learn how to consult people on various issues while remaining professionsal.",
+            "image":"images/humane-society.jpeg"
+        },
+        "Stage Lighting Design":{
+            "dates":"2012-2019",
+            "description":"Throughout highschool, I enjoyed designing lighting scenes for over thirty preformances at multiple locations. I designed scenes and operated the board during talent shows, concerts, and musicals. Programming lighting scenes allowed me to express my creative side while contibuting to my school, which left a lasting impact.",
+            "image":"images/theatre.jpg"
+        }
+    },
+    "portfolio":{
+        "Network Wide Ad/Tracker Blocker":{
+            "date":"February 2023",
+            "description":"Privacy is important to me, and it is becoming increasingly difficult to prevent data collection of individual people. While it is not possible to prevent all data collection of any individual, the amount of data being processed can be reduced. To prevent my data from being used for targeted purposes, I installed <a href=\"https://adguard.com/en/adguard-home/overview.html\" target=\"_blank\">AdGuard Home</a>  on a <a href=\"https://www.raspberrypi.com/\" target=\"_blank\">Raspberry Pi</a> with <a href=\"https://www.docker.com/resources/what-container/\" target=\"_blank\">Docker</a>. The Docker container acts as a DNS server for my router, effectively blocking requests to known Ad and Tracking services. The list of known services updates itself automatically every week. While not all ads and trackers can be blocked, this software significantly reduces the ability of businesses to send me targeted ads.",
+            "image":"images/adguard.png"
+        },
+        "FR24Feeder":{
+            "date":"January 2023",
+            "description":"Using a <a href=\"https://www.raspberrypi.com/\" target=\"_blank\">Raspberry Pi</a>, an antenna, and software provided by <a href=\"https://www.flightradar24.com\" target=\"_blank\">flightradar24</a>, I created a data feeder to feed aircraft positions to flightradar24 and support the aviation community. My feeder provides data for over 800 aircraft per day, with a maximum range of over 80 miles. I later built an app that creates a list of all the aircraft that my radar has detected. Using apache, I make this list available to any computer on my local network.",
+            "image":"images/fr24feeder.png"
+        },
+        "Buffer Overflow Exploit":{
+            "date":"January 2023",
+            "description":"In this project, I manipulated a vulnerable C program to gain root access utilizing a buffer overflow exploit. The vulnerable program reads a file input. I created a malicious file that created a buffer overflow and gave shell access to the user.",
+            "image":"images/bufferoverflow.png"
+        },
+        "Python Port Scanner":{
+            "date":"November 2022",
+            "description":"At Northeastern, I created a port scanner using python. UDP/TCP Ports can be specified, the results can be written to a file, and multiple hosts can be scanned at once.",
+            "image":"images/portscanner.png"
+        },
+        "Bluetooth Spacial Tracking":{
+            "date":"Summer 2021",
+            "description":"Over one summer, Dr. Sheng Tan of Trinity University and I researched the possibility to use Bluetooth radio signals to determine the location of a smartwatch in space. Dr. Tan and I are actively working on this project. The overarching goal of this project is to enhance driver safety. By using the Bluetooth signal strength, we want to estimate the location of a smartwatch relative a steering wheel. Ultimately, the application will use this information to determine if the driver is not focused on driving.<br><br><a href=\"https://dl.acm.org/doi/10.1145/3485730.3492872\" target=\"_blank\">ACM SenSys Publication</a>",
+            "image":"images/bluetoothtrack.png"
+        },
+        "The Turning":{
+            "date":"December 2020",
+            "description":"You wake up in your home next to a bottle of pills, wearing a hospital bracelet. Your memory is foggy. Your child is severly ill and unresponsive. You set out to the hospital name from your bracelet to find a cure. As time progresses, you get sicker and sicker. Taking the pills you found temporarily alleviates the turning. It's your job to solve mysteries, find the cure, and escapte the hospital before it is too late.<br><br>The Turning is a thrilling tilemap game. The object of the game is to find the cure and escape the hospital. The player must gather ingredients to find the cure. The ingrediants are placed around the map. Each ingredient has a unique puzzle required for completion in order to obtain it. Once all ingredients are found, the player can make their way to the labratory bench to put them all together for a final vaccine. My group was responsible for the storyline and design of the game.<br><br>Other Developers: Gabby Orr, Juhi Choudhury, Morgen Halle<br>Music Creators: Rarker Lacy, Sam Gabelmann<br>2D Artist: Rodrimanu360 on OpenGameArt<br>",
+            "image":"images/theturning.png"
+        },
+        "Jump4Justice":{
+            "date":"September 2020",
+            "description":"Jump4Justice is the first Unity game I created with a team. The goal of the game is to defeat the boss enemy and save the victim. Platforms are randomly generated each time, and many henchmen block the path to the boss enemy and the victim. The player has the ability defy gravity and jump multiple times mid air, however the amount of times the player can continue jumping is limited. The blue bar on the top right indicates how much \"Jump Power\" the player has left. This was a group project.<br><br>Other Developers: Grant Peterson, Gabby Orr, Morgen Halle",
+            "image":"images/jump4justice.png"
+        },
+        "AIWolf":{
+            "date":"May 2020",
+            "description":"Utilized Q-Learning to create an Artificially Intelligent text-based werewolf for the card game \"Werewolf.\" The project framework was obtained from the \"AI Wolf\" yearly competition based in Japan. At the end of every day, each werewolf will vote on a player of the villager team to \"Attack\". The player with the highest number of votes will be attacked. Additionally, The werewolves have access to the \"whisper\" channel that can only be heard by other werewolves.<br><br>Other Developers: Gabby Orr",
+            "image":"images/aiwolf.png"
+        },
+        "Inner Ally Companion":{
+            "date":"November 2019",
+            "description":"Inner Ally is a new company by Dr. Cynthia Phelps. Dr. Phelps has an ambition to help those suffering with depression and low self esteem. Dr. Phelps wants to help people change negative thoughts towards themselves into positive ones. At a health and biotech hackathon, Dr. Phelps recruited a team of Trinity University students to help her design an application for this cause. I was lucky enough to be a part of this team. We created an application to help users boost their inner confidence and find their \"InnerAlly.\" The application coaches the user to a more positive well being. It has the user write down goals for the day. It has an assessment for the user to determine the user's personality, and find his/her/their own personal InnerAlly. The application also has daily notifications with inspirational quotes.<br><br>My team, consisting of the youngest and least experienced hacakthon participants, won first prize in the competition.<br><br>Other Conotributors: Gabby Orr, Alejandro Richard",
+            "image":"images/innerally.png"
+        }
+    }
+}

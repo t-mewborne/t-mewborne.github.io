@@ -1,138 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">
+<html lang="en">
     <head>
-        <title>Travis Mewborne</title>
+        <title>Travis</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="script.js" defer></script>
-        <link rel="icon" href="images/favicon.png">
     </head>
-
     <body>
-        <div class ="content">
+        <div class="navigation">
             <div class="name">
-                <h1>Portfolio</h1>
-                <table>
-                    <tr>
-                        <td>
-                            <h2>Network Wide Ad/Tracker Blocker | February 2023</h2>
-                            <h3>Privacy is important to me, and it is becoming increasingly difficult to prevent data collection of individual people. While it is not possible to prevent all data collection of any individual, the amount of data being processed can be reduced. To prevent my data from being used for targeted purposes, I installed <a href="https://adguard.com/en/adguard-home/overview.html" target="_blank">AdGuard Home</a>  on a <a href="https://www.raspberrypi.com/" target="_blank">Raspberry Pi</a> with <a href="https://www.docker.com/resources/what-container/" target="_blank">Docker</a>. The Docker container acts as a DNS server for my router, effectively blocking requests to known Ad and Tracking services. The list of known services updates itself automatically every week. While not all ads and trackers can be blocked, this software significantly reduces the ability of businesses to send me targeted ads.</h3>
-                        </td>
-                        <td style="width:30%">
-                            <a href="images/adguard.png"><img class=portfolioImage src="images/adguard.png" alt="An example of running the script"></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <h2>FR24Feeder | January 2023</h2>
-                            <h3>Using a <a href="https://www.raspberrypi.com/" target="_blank">Raspberry Pi</a>, an antenna, and software provided by <a href="https://www.flightradar24.com" target="_blank">flightradar24</a>, I created a data feeder to feed aircraft positions to flightradar24 and support the aviation community. My feeder provides data for over 800 aircraft per day, with a maximum range of over 80 miles. I later built an app that creates a list of all the aircraft that my radar has detected. Using apache, I make this list available to any computer on my local network. <a href = "fr24sample/fr24p.html" target="_blank">Here</a> is a sample of what this looks like.</h3>
-                        </td>
-                        <td style="width:30%">
-                            <a href="images/fr24feeder.png"><img class=portfolioImage src="images/fr24feeder.png" alt="An example of running the script"></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <h2>Buffer Overflow Exploit | January 2023</h2>
-                            <h3>In this project, I manipulated a vulnerable C program to gain root access utilizing a buffer overflow exploit. The vulnerable program reads a file input. I created a malicious file that created a buffer overflow and gave shell access to the user.</h3>
-                        </td>
-                        <td style="width:25%">
-                            <a href="images/bufferoverflow.png"><img class=portfolioImage src="images/bufferoverflow.png" alt="An example of running the script"></a>
-                        </td>
-                    </tr>
-
-
-                    <tr>
-                        <td>
-                            <h2>Python Port Scanner | November 2022</h2>
-                            <h3>At Northeastern, I created a port scanner using python. UDP/TCP Ports can be specified, the results can be written to a file, and multiple hosts can be scanned at once.</h3>
-                        </td>
-                        <td style="width:25%">
-                            <a href="images/portscanner.png"><img class=portfolioImage src="images/portscanner.png" alt="An example of running the script"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Bluetooth Spacial Tracking | Summer 2021</h2>
-                            <h3>Over one summer, Dr. Sheng Tan of Trinity University and I researched the possibility to use Bluetooth radio signals to determine the location of a smartwatch in space. Dr. Tan and I are actively working on this project. The overarching goal of this project is to enhance driver safety. By using the Bluetooth signal strength, we want to estimate the location of a smartwatch relative a steering wheel. Ultimately, the application will use this information to determine if the driver is not focused on driving.</h3>
-                            <br>
-                            <a href="https://dl.acm.org/doi/10.1145/3485730.3492872" target="_blank"><h3>ACM SenSys Publication</h3></a>
-                        </td>
-                        <td>
-                            <a href="images/bluetoothtrack.png"><img class=portfolioImage src="images/bluetoothtrack.png" alt="A representation of how the system works"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>The Turning | December 2020</h2>
-                            <h3>You wake up in your home next to a bottle of pills, wearing a hospital bracelet. Your memory is foggy. Your child is severly ill and unresponsive. You set out to the hospital name from your bracelet to find a cure. As time progresses, you get sicker and sicker. Taking the pills you found temporarily alleviates the turning. It's your job to solve mysteries, find the cure, and escapte the hospital before it is too late.</h3>
-                            <h3>The Turning is a thrilling tilemap game. The object of the game is to find the cure and escape the hospital. The player must gather ingredients to find the cure. The ingrediants are placed around the map. Each ingredient has a unique puzzle required for completion in order to obtain it. Once all ingredients are found, the player can make their way to the labratory bench to put them all together for a final vaccine. My group was responsible for the storyline and design of the game.</h3>
-                            <br>
-                            <h3>
-                                Other Developers: Gabby Orr, Juhi Choudhury, Morgen Halle<br>
-                                Music Creators: Rarker Lacy, Sam Gabelmann<br>
-                                2D Artist: Rodrimanu360 on OpenGameArt<br>
-                            </h3>
-                        </td>
-                        <td>
-                            <a href="images/theturning.png"><img class=portfolioImage src="images/theturning.png" alt="The Turning Screen Cap"></a>
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>
-                            <h2>Jump4Justice | September 2020</h2>
-                            <h3>Jump4Justice is the first Unity game I created with a team. The goal of the game is to defeat the boss enemy and save the victim. Platforms are randomly generated each time, and many henchmen block the path to the boss enemy and the victim. The player has the ability defy gravity and jump multiple times mid air, however the amount of times the player can continue jumping is limited. The blue bar on the top right indicates how much "Jump Power" the player has left. This was a group project.</h3>
-                            <br>
-                            <h3>Other Developers: Grant Peterson, Gabby Orr, Morgen Halle</h3>
-                        </td>
-                        <td>
-                            <a href="images/jump4justice.png"><img class=portfolioImage src="images/jump4justice.png" alt="Jump4Justice Gameplay Screen Cap"></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <h2>AIWolf | May 2020</h2>
-                            <h3>Utilized Q-Learning to create an Artificially Intelligent text-based werewolf for the card game "Werewolf." The project framework was obtained from the "AI Wolf" yearly competition based in Japan. At the end of every day, each werewolf will vote on a player of the villager team to “Attack”. The player with the highest number of votes will be attacked. Additionally, The werewolves have access to the “whisper” channel that can only be heard by other werewolves.</h3>
-                            <br>
-                            <h3>Other Developers: Gabby Orr</h3>
-                        </td>
-                        <td>
-                            <a href="images/aiwolf.png"><img class=portfolioImage src="images/aiwolf.png" alt="AIWolf Example output"></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <h2>Inner Ally Companion | November 2019</h2>
-                            <h3>Inner Ally is a new company by Dr. Cynthia Phelps. Dr. Phelps has an ambition to help those suffering with depression and low self esteem. Dr. Phelps wants to help people change negative thoughts towards themselves into positive ones. At a health and biotech hackathon, Dr. Phelps recruited a team of Trinity University students to help her design an application for this cause. I was lucky enough to be a part of this team. We created an application to help users boost their inner confidence and find their "InnerAlly." The application coaches the user to a more positive well being. It has the user write down goals for the day. It has an assessment for the user to determine the user's personality, and find his/her/their own personal InnerAlly. The application also has daily notifications with inspirational quotes.</h3>
-                            <h3>My team, consisting of the youngest and least experienced hacakthon participants, won first prize in the competition.</h3>
-                            <br>
-                            <h3>Other Conotributors: Gabby Orr, Alejandro Richard</h3>
-                        </td>
-                        <td>
-                            <a href="images/innerally.png"><img class=portfolioImage src="images/innerally.png" alt="Inner Ally Prototype"></a>
-                        </td>
-                    </tr>
-
-                </table>
+                <h1>Travis Mewborne</h1>
             </div>
-
-            <div class="navigation">
-                <ul>
-                    <li><a href="index.html">Overview</a></li>
-                    <li><a href="whoami.html">whoami</a></li>
-                    <li class = "currentPage">&#8226 Portfolio</li>
-                    <li><a href="files/webResume.pdf" target="_blank">R&#233sum&#233</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <ul id = "social">
-                    <li><a href="https://github.com/t-mewborne" target="_blank"><img src="logos/github64.png" alt="GitHub Profile"></a></li>
-                    <li><a href="https://www.linkedin.com/in/t-mewborne/" target="_blank"><img src="logos/in.png" alt="LinkedIn Profile"></a></li>
-                </ul>
+            <div class="buttons">
+                <!-- <ul>
+                    <li id="selected"><a>whoami</a></li>
+                    <li><a>R&#233sum&#233</a></li>
+                    <li><a>Protfolio</a></li>
+                    <li><a><img src="images/in.png"></img></a></li>
+                    <li><a><img src="images/github64.png"></img></a></li>
+                </ul> -->
+                <a class="text" href="index.html">whoami</a>
+                <a class="text" href="resume.html">R&#233sum&#233</a>
+                <a id="selected" class="text">Protfolio</a>
+                <a class="image" href="https://www.linkedin.com/in/t-mewborne/" target="_blank"><img src="images/in.png"></img></a>
+                <a class="image" href="https://github.com/t-mewborne" target="_blank"><img src="images/github64.png"></img></a>
+                <!-- <p>whoami</p>
+                <button>R&#233sum&#233</button>
+                <button>Protfolio</button> -->
             </div>
+        </div>
+        <div id="portfolio-content">
+            <p class="error">Could not load content! Please ensure JavaScript is enabled.</p>
         </div>
     </body>
 </html>
