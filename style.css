@@ -5,28 +5,20 @@ html, body {
     overflow-x:hidden;
     background-color:#25363D;
     color:#d9fbf5;
+    font-size:20px;
 }
 
 * {
     margin:0;
 }
 
-.navigation {
-    background-color:#2A3D45;
-    width:100%;
-    margin: 0;
-    padding: 1%;
-    display: flex;
-    align-items: center;
-}
-
-.navigation img {
+/* .navigation img {
     height:50%;
     width: auto;
     position:absolute;
-}
+} */
 
-.name {
+/* .name {
     white-space:nowrap;
     width:55%;
 }
@@ -34,29 +26,10 @@ html, body {
 .buttons {
     position:absolute;
     right:0;
-    /* overflow:hidden; */
     padding:1%;
     width:55%;
-    /* vertical-align: middle; */
-    /* display: inline; */
 }
 
-    /* .buttons ul{
-        list-style-type: none;
-        display: inline;
-        padding:0;
-        white-space:nowrap;
-        right:0;
-        float: right;
-        justify-content: space-between;
-    } */
-
-/* .buttons li {
-    display: inline;
-    float: right;
-    padding: 5%;
-    
-} */
 
 a:link, a:visited {
     color: inherit;
@@ -80,56 +53,82 @@ a:link, a:visited {
     padding:1% 0 1% 0;
     right:0;
     width:40%;
-}
+} */
 
-a#selected, a:hover {
-    color:#3DDC97;
-}
-
-/* li#selected, li:hover {
+/* a#selected, a:hover {
     color:#3DDC97;
 } */
 
 .content {
     /* background-color:#3DDC97; */
     position:absolute;
-    margin-top:5%;
+    margin-top:15%;
+    margin-left:30%;
+    margin-right:30%;
+    background-color:#1d2b30;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 0 4px 12px #0e0f0f;
     /* margin-bottom:calc(5% + 50px); */
 
 }
 
-.content p {
-    text-align: justify;
-    padding:5%;
+.content h1 {
+    /* margin-top: 2%; */
+    margin-bottom: 4%;
 }
 
-.content img {
+.content a {
+    display: inline-block;
+    margin:3%;
+    padding:2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color:#1d2b30;
+    background-color: #3DDC97;
+    border-radius: 5%;
+    text-decoration: none;
+    font-size:30px;
+    transition: background-color 0.25s ease;
+}
+
+.content a:hover {
+    background-color: #289868;
+}
+
+/* .content p {
+    text-align: justify;
+    padding:5%;
+} */
+
+/* .content img {
     width:50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 5px 5px 20px #1c272c;
-}
+} */
 
-#resume-content, #portfolio-content {
+/* #resume-content, #portfolio-content {
     margin:5%;
-}
+} */
 
 /* table#resume,th,td {
     border: 1px solid;
 } */
 
-th { 
+/* th { 
     border-bottom: 1px solid;
     padding:10px;
-}
+} */
 
-table#resume {
+/* table#resume {
     width:90%;
-    /* table-layout: fixed; */
-}
+    /* table-layout: fixed; 
+} */
 
-tr.spacer {
+/* tr.spacer {
     height:50px;
 }
 
@@ -149,4 +148,4 @@ p.error, h1.error {
     color:#c37e5c;
     padding:5%;
     width:100%;
-}
+} */
