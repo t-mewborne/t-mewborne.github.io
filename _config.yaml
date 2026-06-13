@@ -1,0 +1,9 @@
+title: Travis
+description: Cybersecurity Professional
+url: "https://t-mewborne.github.io/"
+permalink: pretty  # Makes URLs like /projects/ instead of /projects.html
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

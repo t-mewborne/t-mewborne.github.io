@@ -1,0 +1,157 @@
+:root {
+    --background:#25363D;
+    --background-accent:#2A3D45;
+    --text-accent:#3DDC97;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x:hidden;
+    background-color:var(--background);
+    color:#d9fbf5;
+    font-family: "Verdana", "Arial", sans-serif;
+}
+
+* {
+    margin:0;
+}
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.navigation {
+    background-color:var(--background-accent);
+    width:100%;
+    /* margin: 0; */
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.navigation .name {
+    white-space:nowrap;
+    flex:1;
+    display: flex;
+    align-items: center;
+    padding: 0 1%; 
+}
+
+.navigation img {
+    height: 24px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.buttons {
+    display: flex;
+    align-items: stretch;
+    /* gap: 16px; */
+}
+
+/* .buttons a {
+    padding: 10% 0%;
+} */
+
+.buttons a:not(.image) {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    white-space: nowrap;
+}
+
+.buttons .image {
+    padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.selected {
+    cursor:default;
+    background-color:var(--background);
+
+}
+
+.selected, a:hover {
+    color:var(--text-accent);
+    background-color:var(--background);
+}
+
+
+
+
+
+
+main {
+    position:absolute;
+    margin-top:5%;
+}
+main img {
+    width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 20px #1c272c;
+}
+
+.section {
+    display: flex;
+}
+
+.section .image {
+    width: 50%;
+}
+
+.section .image img {
+    width: 80%;
+    padding:10px, 10px;
+    flex: 1;
+}
+
+.section .summary {
+    flex: 1;
+    margin:5%;
+    width: 50%;
+}
+
+
+
+/*TODO: Review all below*/
+
+#resume-content, #portfolio-content {
+    margin:5%;
+}
+
+th { 
+    border-bottom: 1px solid;
+    padding:10px;
+}
+
+table#resume {
+    width:90%;
+    /* table-layout: fixed; */
+}
+
+tr.spacer {
+    height:50px;
+}
+
+.resumepic {
+    max-width: 100%;
+}
+
+.column1 {
+    width:60%;
+}
+
+.column2 {
+    width:30%;
+}
+
+p.error, h1.error {
+    color:#c37e5c;
+    padding:5%;
+    width:100%;
+}
