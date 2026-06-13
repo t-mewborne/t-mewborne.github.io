@@ -2,15 +2,18 @@
 <html lang="en">
     <head>
         <title>{{ page.error.name }}</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
         <meta name="robots" content="noindex, nofollow" />
     </head>
     <body>
-        <main>
+
+        <div class="error-wrapper">
             <div class="error">
                 <h1 class="error">{{ page.error.name }}</h1>
-                <p class="error">{{ page.error.description }}<a href="index.html">Click here to return home.</a></p>
+                <p class="error">{{ page.error.description }}</p>
+                <button onclick="window.location.href='/';">Return Home</button>
             </div>
-        </main>
+        </div>
+
     </body>
 </html>

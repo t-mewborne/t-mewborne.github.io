@@ -1,14 +1,18 @@
 :root {
+    --text:#d9fbf5;
     --background:#25363D;
     --background-accent:#2A3D45;
     --text-accent:#3DDC97;
+    --text-link:#ca8cf1;
+    --button-background:#a73bea;
 }
 
 html, body {
+    height:100%;
     max-width: 100%;
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
     background-color:var(--background);
-    color:#d9fbf5;
+    color:var(--text);
     font-family: "Verdana", "Arial", sans-serif;
 }
 
@@ -22,9 +26,12 @@ a:link, a:visited {
 }
 
 .navigation {
+    position: sticky;
+    top:0;
+    z-index: 100;
     background-color:var(--background-accent);
     width:100%;
-    /* margin: 0; */
+    margin: 0;
     padding: 0;
     display: flex;
     align-items: stretch;
@@ -79,41 +86,56 @@ a:link, a:visited {
     background-color:var(--background);
 }
 
-
+.link {
+    color:var(--text-link);
+}
 
 
 
 
 main {
-    position:absolute;
-    margin-top:5%;
+    /* position:absolute; */
+    padding-top:2%;
 }
-main img {
-    width:50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.boxshadow {
     box-shadow: 5px 5px 20px #1c272c;
 }
 
 .section {
     display: flex;
+    align-items: center;
+    min-height: 60vh;
 }
 
 .section .image {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section .image img {
     width: 80%;
-    padding:10px, 10px;
-    flex: 1;
+    /* padding:10px, 10px; */
+    /* flex: 1; */
 }
 
 .section .summary {
-    flex: 1;
+    /* flex: 1; */
     margin:5%;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    padding:20px 10px;
+}
+
+.header h1 {
+    padding-left:1%;
 }
 
 
@@ -150,8 +172,46 @@ tr.spacer {
     width:30%;
 }
 
-p.error, h1.error {
-    color:#c37e5c;
-    padding:5%;
+
+
+
+.error-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     width:100%;
+}
+
+.error {
+    background-color: var(--background-accent);
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    width: 40%;
+    /* box-shadow: 5px 5px 20px #1c272c; */
+}
+
+p.error, h1.error {
+    /* color:#c37e5c; */
+    padding:5px 0px;
+    width:100%;
+}
+
+button {
+    color:var(--text);
+    background-color: var(--button-background);
+    border-radius: 4px;
+    border-style: none;
+    margin:5px 0;
+    padding: 8px 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #1c272c;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--text-accent);
+    transform: translateY(-2px);
+    box-shadow: 7px 7px 25px #1c272c;
 }

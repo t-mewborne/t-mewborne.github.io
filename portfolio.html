@@ -1,8 +1,61 @@
 ---
 layout: default
 title: Portfolio
+dataset:
+    projects:
+    - name: Network Wide Ad/Tracker Blocker
+      date: February 2023
+      description: Privacy is important to me, and it is becoming increasingly difficult to prevent data collection of individual people. While it is not possible to prevent all data collection of any individual, the amount of data being processed can be reduced. To prevent my data from being used for targeted purposes, I installed AdGuard Home on a Raspberry Pi with Docker. The Docker container acts as a DNS server for my router, effectively blocking requests to known Ad and Tracking services. The list of known services updates itself automatically every week. While not all ads and trackers can be blocked, this software significantly reduces the ability of businesses to send me targeted ads.
+      image: /assets/images/adguard.png
+    - name: FR24Feeder
+      date: January 2023
+      description: Using a Raspberry Pi, an antenna, and software provided by Flightradar24, I created a data feeder to feed aircraft positions to flightradar24 and support the aviation community. My feeder provides data for over 800 aircraft per day, with a maximum range of over 80 miles. I later built an app that creates a list of all the aircraft that my radar has detected. Using apache, I make this list available to any computer on my local network.
+      image: /assets/images/fr24feeder.png
+    - name: Buffer Overflow Exploit
+      date: January 2023
+      description: In this project, I manipulated a vulnerable C program to gain root access utilizing a buffer overflow exploit. The vulnerable program reads a file input. I created a malicious file that created a buffer overflow and gave shell access to the user.
+      image: /assets/images/bufferoverflow.png
+    - name: Python Port Scanner
+      date: November 2022
+      description: At Northeastern, I created a port scanner using python. UDP/TCP Ports can be specified, the results can be written to a file, and multiple hosts can be scanned at once.
+      image: /assets/images/portscanner.png
+    - name: Bluetooth Spacial Tracking
+      date: Summer 2021
+      description: Over one summer, Dr. Sheng Tan of Trinity University and I researched the possibility to use Bluetooth radio signals to determine the location of a smartwatch in space. Dr. Tan and I are actively working on this project. The overarching goal of this project is to enhance driver safety. By using the Bluetooth signal strength, we want to estimate the location of a smartwatch relative a steering wheel. Ultimately, the application will use this information to determine if the driver is not focused on driving.
+      links:
+      - text: ACM Sensys Publication
+        url: https://dl.acm.org/doi/10.1145/3485730.3492872
+      image: /assets/images/bluetoothtrack.png
+    - name: The Turning
+      date: December 2020
+      description: You wake up in your home next to a bottle of pills, wearing a hospital bracelet. Your memory is foggy. Your child is severly ill and unresponsive. You set out to the hospital name from your bracelet to find a cure. As time progresses, you get sicker and sicker. Taking the pills you found temporarily alleviates the turning. It's your job to solve mysteries, find the cure, and escapte the hospital before it is too late.<br><br>The Turning is a thrilling tilemap game. The object of the game is to find the cure and escape the hospital. The player must gather ingredients to find the cure. The ingrediants are placed around the map. Each ingredient has a unique puzzle required for completion in order to obtain it. Once all ingredients are found, the player can make their way to the labratory bench to put them all together for a final vaccine. My group was responsible for the storyline and design of the game.
+      image: /assets/images/theturning.png
+    - name: AI Wolf
+      date: May 2020
+      description: Utilized Q-Learning to create an Artificially Intelligent text-based werewolf for the card game "Werewolf." The project framework was obtained from the "AI Wolf" yearly competition based in Japan. At the end of every day, each werewolf will vote on a player of the villager team to "Attack". The player with the highest number of votes will be attacked. Additionally, The werewolves have access to the "whisper" channel that can only be heard by other werewolves.
+      image: /assets/images/aiwolf.png
+    - name: Inner Ally Companion
+      date: November 2019
+      description: Inner Ally is a new company by Dr. Cynthia Phelps. Dr. Phelps has an ambition to help those suffering with depression and low self esteem. Dr. Phelps wants to help people change negative thoughts towards themselves into positive ones. At a health and biotech hackathon, Dr. Phelps recruited a team of Trinity University students to help her design an application for this cause. I was lucky enough to be a part of this team. We created an application to help users boost their inner confidence and find their "InnerAlly." The application coaches the user to a more positive well being. It has the user write down goals for the day. It has an assessment for the user to determine the user's personality, and find his/her/their own personal InnerAlly. The application also has daily notifications with inspirational quotes.<br><br>My team, consisting of the youngest and least experienced hacakthon participants, won first prize in the competition.
+      image: /assets/images/innerally.png
 ---
 
-<div id="portfolio-content">
-    <p class="error">Thank you for your patience while I apply updates to my website.</p>
-</div>
+{% for project in page.dataset.projects %}
+    <div class="section">
+        <div class="summary">
+            <h2>{{ project.name }}</h2>
+            <h4>{{ project.date }}</h4>
+            <br>
+            <p>{{ project.description }}</p>
+            {% for link in project.links %}
+                <br>
+                <div class="link"><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></div>
+            {% endfor %}
+        </div>
+
+        <div class="image">
+            <img src="{{ project.image }}" alt="Image of of {{ project.name }}">
+        </div>
+    </div>
+    <br>
+{% endfor %}

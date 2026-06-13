@@ -1,8 +1,42 @@
 ---
 layout: default
 title: Resume
+dataset:
+    education:
+        - name: Northeastern University
+          location: Boston, Massachusetts
+          degree: Master of Science, Cybersecurity
+          graduation_date: May 2024
+          icon: "/assets/images/northeastern.png"
+        - name: Trinity University
+          location: San Antonio, Texas
+          degree: Bachelor of Science, Cybersecurity
+          graduation_date: May 2022
+          icon: "/assets/images/trinity.png"
 ---
 
-<div id="resume-content">
-    <p class="error">Thank you for your patience while I apply updates to my website.</p>
+<div class="header">
+    <h1>Education</h1>
+    <hr>
 </div>
+
+{% for school in page.dataset.education %}
+    <div class="section">
+        <div class="summary">
+            <h2>{{ school.name }}</h2>
+            <p>{{ school.location }}</p>
+            <p>{{ school.degree }}</p>
+            <p>{{ school.graduation_date }}</p>
+        </div>
+
+        <div class="image">
+            <img src="{{ school.icon }}" alt="Logo of {{ school.name }}">
+        </div>
+    </div>
+    <br>
+{% endfor %}
+
+<!-- <div class="header">
+    <h1>Experience</h1>
+    <hr>
+</div> -->
